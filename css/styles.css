@@ -2,7 +2,13 @@ body {
   font-family: "Montserrat";
   text-align: center;
 }
-h1, h2, h3, h4, h5, h6 {
+/* multiple selectors */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
   line-height: 1.5;
 }
@@ -10,13 +16,23 @@ p {
   color: #8f8f8f;
 }
 
+/* sections */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
 /* headings */
 .big-heading {
-  font-weight: 900;
-  font-size: 3.5rem;
+  font-weight: 600;
+  font-size: 3rem;
 }
 .section-heading {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .container-fluid {
   padding: 7% 15%;
@@ -24,18 +40,18 @@ p {
 
 /* Nav bar */
 .navbar {
-  padding: 0 0 4.5rem;
+  padding: 0 0 4rem;
 }
 .navbar-brand {
   font-family: "ubuntu";
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 400;
 }
 .nav-item {
   padding: 0 18px;
 }
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -45,13 +61,10 @@ p {
 }
 
 /* title section */
-#title {
-  background-color: #ff4c68;
-  color: #fff;
-  text-align: left;
-}
-#title .container-fluid{
+/* heirarchial selector */
+#title .container-fluid {
   padding: 3% 15% 7%;
+  text-align: left;
 }
 
 /* Title Image */
@@ -65,15 +78,13 @@ p {
 /* Features */
 /* icons */
 #features {
-  background-color: #fff;
   position: relative;
   z-index: 1; /* Won't hurt to remove this Z- index since features div is anyways going to be on top */
 }
 .feature-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .feature-card {
-  
   padding: 5%;
 }
 .features-icon {
@@ -90,7 +101,7 @@ p {
   color: #fff;
 }
 .testimonial-text {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .testimonial-image {
   width: 10%;
@@ -111,10 +122,10 @@ p {
   padding: 100px;
 }
 .pricing-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .price-text {
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 .pricing-column {
   padding: 3% 2%;
@@ -132,15 +143,8 @@ p {
 }
 
 /* CTA */
-#cta {
-  color: #fff;
-  background-color: #ff4c68;
-}
 
 /* footer */
-#footer {
-  background-color: #fff;
-}
 .footer-icon {
   margin: 3% 2%;
 }
